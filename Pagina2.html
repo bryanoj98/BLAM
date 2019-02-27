@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Pagina2_css.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+  <h1>B anda</br>L ógica</br>A utómatica</br>M ovil</h1>
+</div>
+<div class="row">
+  <div class="columns side">
+    izq
+  </div>
+  <div class="columns middle">
+    <img src="caja.png" alt="banda" class="caja" id="caji">
+    <img src="bandi.png" alt="banda" class="center" width="100%">
+
+  </div>
+  <div class="columns side">
+    dere
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <h2>Analogos</h2>
+    <p>Ultrasonido
+      <label id="ultra">0</label>
+    </p>
+    <input type="range" min="1" max="80" value="40" class="slider" id="ultraD">
+
+    <p>Fotoresistencia
+      <label id="foto">0</label>
+    </p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="FotoD">
+
+    <p>Velocidad Motor
+      <label id="velo">0</label>
+    </p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="motor">
+
+    <p>Intencidad Leds
+      <label id="inte">0</label>
+    </p>
+    <input type="range" min="1" max="100" value="50" class="slider" id="leds">
+
+  </div>
+
+  <div class="column">
+    <h2>Digitales</h2>
+    <p>Chicharra
+      <label class="switch">
+        <input type="checkbox" id="chicha" onclick="myFunction()">
+        <span class="slide round"></span>
+      </label>
+    </p>
+    <p>Relebo
+      <label class="switch">
+        <input type="checkbox" id="rele" onclick="myFunction()">
+        <span class="slide round"></span>
+      </label>
+    </p>
+    <p>Sensor de Presencia
+      <label id="presen">0</label>
+    </p>
+    <p>Fin de Carrera
+      <label id="finde">0</label>
+    </p>
+
+  </div>
+</div>
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+  <script src="Pagina2_js.js"></script>
+  </body>
+</html>
