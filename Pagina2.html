@@ -3,92 +3,108 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Pagina2_css.css">
-    <title></title>
+    <title>BLAM</title>
   </head>
   <body>
-    <div class="header">
-  <h1>B anda</br>L ógica</br>A utómatica</br>M ovil</h1>
-</div>
-<div class="row">
-  <div class="columns side">
-    <img src="fotoR.png" alt="fotoR" id="fotoR" width="200%" hidden>
-    <img src="fotoR2.png" alt="fotoR2" id="fotoR2" width="200%"hidden>
-    <img src="fotoR3.png" alt="fotoR3" id="fotoR3" width="200%"hidden>
-    <img src="fotoR3_5.png" alt="fotoR3_5" id="fotoR3_5" width="200%"hidden>
-    <img src="fotoR4.png" alt="fotoR4" id="fotoR4" width="200%"hidden>
-    <img src="fotoR5.png" alt="fotoR5" id="fotoR5" width="200%">
+    <header>
+      <h1>B anda</br>L ógica</br>A utómatica</br>M ovil</h1>
+    </header>
+    <div class="row">
+      <div class="columns side">
+        <img src="fotoR.png" id="fotoR" width="150%" hidden>
+        <img src="fotoR2.png" id="fotoR2" width="150%"hidden>
+        <img src="fotoR3.png" id="fotoR3" width="150%"hidden>
+        <img src="fotoR3_5.png" id="fotoR3_5" width="150%"hidden>
+        <img src="fotoR4.png" id="fotoR4" width="150%"hidden>
+        <img src="fotoR5.png" id="fotoR5" width="150%">
+        <img src="fantasma.gif" id="fanta" width="190%" hidden>
 
+      </div>
+      <div class="columns middle">
+        <img src="red.png" id="redi" align="right" hidden>
+        <img src="nara.png" id="nara" align="right" hidden>
+        <img src="ama.png" id="ama" align="right" hidden>
+        <img src="ver.png" id="ver" align="right" hidden>
+        <img src="azu.png" id="azu" align="right" hidden>
+        <img src="blan.png" id="blan" align="right" hidden>
+        <img src="caja.png" class="caja" id="caji">
+        <img src="bandi2.png" id="banda" class="center" width="100%">
+        <img src="stop.png" id="stop" class="center" width="100%" hidden>
 
+      </div>
+      <div class="columns side">
+        <img src="mute.png" id="mute" width="100%">
+        <img src="sound.png" id="sound" width="100%" hidden>
+        <img src="llego.gif" id="llego" width="100%" hidden>
+        <img src="agu.png" class="agu" id="agu" width="100%">
+        <img src="agu2.png" class="agu" id="agu2" width="100%" hidden>
+        <img src="agu2_5.png" class="agu" id="agu2_5" width="100%" hidden>
+        <img src="agu3.png" class="agu" id="agu3" width="100%" hidden>
+        <img src="agu4.png" class="agu" id="agu4" width="100%" hidden>
+        <img src="agu5.png" class="agu" id="agu5" width="100%" hidden>
 
-  </div>
-  <div class="columns middle">
-    <img src="red.png" alt="redi" id="redi" align="right" hidden>
-    <img src="nara.png" alt="nara" id="nara" align="right" hidden>
-    <img src="ama.png" alt="ama" id="ama" align="right" hidden>
-    <img src="ver.png" alt="ver" id="ver" align="right" hidden>
-    <img src="azu.png" alt="azu" id="azu" align="right" hidden>
-    <img src="blan.png" alt="blan" id="blan" align="right" hidden>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2>Analogos</h2>
+        <p>Ultrasonido
+          <label id="ultra">0</label>
+        </p>
+        <input type="range" min="1" max="80" value="40" class="slider" id="ultraD">
 
-    <img src="caja.png" alt="banda" class="caja" id="caji">
-    <img src="bandi.png" alt="banda" class="center" width="100%">
+        <p>Fotoresistencia
+          <label id="foto">0</label>
+        </p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="FotoD">
 
-  </div>
-  <div class="columns side">
-    <img src="mute.png" alt="mute" id="mute" width="100%">
-    <img src="sound.png" alt="sound" id="sound" width="100%" hidden>
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <h2>Analogos</h2>
-    <p>Ultrasonido
-      <label id="ultra">0</label>
-    </p>
-    <input type="range" min="1" max="80" value="40" class="slider" id="ultraD">
+        <p>Velocidad Motor
+          <label id="velo">0</label>
+        </p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="motor">
 
-    <p>Fotoresistencia
-      <label id="foto">0</label>
-    </p>
-    <input type="range" min="1" max="100" value="50" class="slider" id="FotoD">
+        <p>Intencidad Leds
+          <label id="inte">0</label>
+        </p>
+        <input type="range" min="1" max="100" value="50" class="slider" id="leds">
 
-    <p>Velocidad Motor
-      <label id="velo">0</label>
-    </p>
-    <input type="range" min="1" max="100" value="50" class="slider" id="motor">
+      </div>
 
-    <p>Intencidad Leds
-      <label id="inte">0</label>
-    </p>
-    <input type="range" min="1" max="100" value="50" class="slider" id="leds">
-
-  </div>
-
-  <div class="column">
-    <h2>Digitales</h2>
-    <p>Chicharra
-      <label class="switch">
-        <input type="checkbox" id="chicha" onclick="myFunction()">
-        <span class="slide round"></span>
-      </label>
-    </p>
-    <p>Relebo
-      <label class="switch">
-        <input type="checkbox" id="rele" onclick="myFunction()">
-        <span class="slide round"></span>
-      </label>
-    </p>
-    <p>Sensor de Presencia
-      <label id="presen">0</label>
-    </p>
-    <p>Fin de Carrera
-      <label id="finde">0</label>
-    </p>
-
-  </div>
-</div>
-  <div class="footer">
-    <h2>Footer</h2>
-  </div>
+      <div class="column">
+        <h2>Digitales</h2>
+        <p>Chicharra
+          <label class="switch">
+            <input type="checkbox" id="chicha" onclick="myFunction()">
+            <span class="slide round"></span>
+          </label>
+        </p>
+        <p>Rele
+          <label class="switch">
+            <input type="checkbox" id="rele" onclick="myFunction()">
+            <span class="slide round"></span>
+          </label>
+        </p>
+        <p>Sensor de Presencia
+          <label id="presen">0</label>
+          <label class="switch">
+            <input type="checkbox" id="presente" onclick="myFunction()">
+            <span class="slide round"></span>
+          </label>
+        </p>
+        <p>Fin de Carrera
+          <label id="finde">0</label>
+          <label class="switch">
+            <input type="checkbox" id="llega" onclick="myFunction()">
+            <span class="slide round"></span>
+          </label>
+        </p>
+      </div>
+    </div>
+    <footer>
+    <p>Posted by: Alison Ruiz - Bryan Perez - Jorge Franco</p>
+    <p>Contact information: <a>
+    BLAM@gmail.com</a>.</p>
+  </footer>
   <script src="Pagina2_js.js"></script>
   </body>
 </html>
